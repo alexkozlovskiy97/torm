@@ -1,0 +1,377 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url("jpg/back_whole.jpg") no-repeat fixed;
+}
+
+#wrapper {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+h1{
+    margin-bottom: 7px;
+    background: linear-gradient(45deg, rgba(246,209,164,0.7),rgba(246,209,164,0));
+    width: 50%;
+    padding: 5px;
+    border-radius: 10px;
+    margin-left: -7px;
+}
+
+.block {
+    padding: 50px;
+}
+/*------------------------------------------------------------------------------------------------*/
+.header {
+    background: url("jpg/coffee.jpg") no-repeat;
+    height: 500px;
+    margin-bottom: 10px;
+	background-size: 100% 100%;
+}
+
+/*------------------------------------------------------------------------------------------------*/
+
+nav {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+nav:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 50px;
+    left: 0;
+    position: absolute;
+    background: rgba(5,1,21, 1);
+    z-index: -1;
+}
+
+nav ul {
+    list-style: none;
+    height: 50px;
+}
+
+nav li {
+    float: left;
+    width: 20%;
+    max-width: 1280px;
+    margin: 0 0 0 30px;
+    background-color: rgba(29, 5, 18, 0.98);
+    border-radius: 5px;
+    opacity: 0.5;
+    transition: 1s;
+    font-weight: bold;
+}
+
+nav a {
+    color: #FD9590;
+    display: block;
+    height: 50px;
+    padding: 0 30px;
+    line-height: 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav li:hover {
+    transition: 0s;
+    opacity: 1;
+}
+
+/*------------------гамбургер------------------------------------------------------------------
+
+.section {
+    height: 50vh;
+    background-color: rgba(76, 33, 27, 0.98);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.menu-btn {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    border-radius: 50%;
+}
+
+
+------------------------------------------------------------------------------------------------*/
+
+
+.content1{
+    background: url("jpg/back.jpg") no-repeat;
+    height: 500px;
+	background-size: 100% 100%;
+}
+
+.anim{
+    margin: 50px 0;
+}
+
+.animation_circle {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    position: relative;
+    left: 0;
+    background-color: rgba(106, 28, 6, 0.82);
+   /* animation-name: white_circle;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 0.5s;*/
+
+    animation: white_circle linear 2s infinite alternate 0.5s, red_circle linear 2s infinite alternate 0.5s;
+}
+
+
+@keyframes white_circle {
+    0% {
+        left: 0;
+    }
+    50% {
+     border-radius: 0;
+    }
+    100% {
+        left: 300px;
+    }
+}
+
+@keyframes red_circle {
+    0% {
+        background-color: rgba(106, 28, 6, 0.82);
+    }
+    50% {
+        background-color: #ff3131;
+    }
+    100% {
+        background-color: rgba(106, 28, 6, 0.82);
+    }
+}
+
+/*------------------------------------------------------------------------------------------------*/
+.content2{
+    background: url("jpg/coffee2.jpg") no-repeat center;
+    height: 500px;
+}
+
+.parent {
+    display: flex;
+    align-content: stretch;
+    flex-direction: row-reverse;
+    height: 50%;
+    width: 50%;
+}
+
+.child {
+    flex: 1;
+    width: 100%;
+    height: 50px;
+    border: 2px solid black;
+	background: #E6B57A ;
+	animation-duration: 5s;
+    animation-name: kontent;
+    animation-iteration-count: infinite;
+	margin: 5px; border-radius: 20px;
+	text-align: center;
+	padding: 10px;
+}
+
+.child:nth-child(2n){
+	animation-direction: alternate;
+}
+
+.child:nth-child(2n-1){
+	animation-direction: alternate-reverse;
+}
+
+@keyframes kontent {
+    from {
+        background: #E6B57A ;
+    }
+
+    20% {
+        background: #F6D1A4 ;
+    }
+	
+	55% {
+        background: #793E30 ;
+    }
+
+    to {
+        background: #4F1406 ;
+    }
+}
+
+.content2 table {
+    margin: 30px 60px;
+    width: 50%;
+}
+
+table {
+   /* border: 2px solid #1d0512;*/
+    border-collapse: collapse;
+    width: 400px;
+    border-radius: 20px
+}
+
+table caption {
+    background-color: rgba(247, 252, 247, 0.8);
+    border-radius: 20px 20px 0 0;
+    margin: 5px 0;
+}
+
+th{
+    /*border: 1px solid #1d0512;*/
+    border-radius: 7px;
+    background-color: #F6D1A4;
+    padding: 5px;
+    font-size: 20px;
+}
+
+td {
+    /*border: 1px solid #1d0512;*/
+    border-radius: 7px;
+    background-color: #F6D1A4;
+    padding: 5px;
+    font-size: 15px;
+}
+
+/*------------------------------------------------------------------------------------------------*/
+.content3{
+    background: url("jpg/back.jpg") no-repeat;
+	background-size: 100% 100%;
+    height: 500px;
+    border: 5px solid black;
+    margin: 7px;
+}
+
+.content3 p {
+    text-align: justify;
+}
+
+.text{
+    font-size: 17px;
+    font-family: Calibri sans-serif;
+
+}
+
+.leftImg {
+    float: left;
+    margin: 0 20px 15px 0;
+    max-width: 250px;
+    max-height: 250px;
+    width: 20%;
+}
+
+/*------------------------------------------------------------------------------------------------*/
+.footer {
+    background: url("jpg/coffee3.jpg") no-repeat center;
+    background-size: cover;
+    height: 500px;
+    margin-top: 10px;
+}
+
+.footer p {
+    color: white;
+}
+
+
+/*---------------------------боковая анимация---------------------------------------------------------------------*/
+.back{
+    position: fixed;
+    height: 130%;
+    width: 30%;
+    background-color: rgba(230,181,122, 0.2);
+    transition: 3s;
+}
+
+.back:hover {
+    background-color: rgba(230,181,122, 0.4);
+    right: -400px;
+    transition: 3s;
+}
+
+.back1{
+    right: -500px;
+    top:-30%;
+    animation-duration: 22s;
+    animation-name: rotat1;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+.back2{
+    right: -500px;
+    top:-30%;
+    animation-duration: 27s;
+    animation-name: rotat2;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes rotat1 {
+    from {
+        transform: skew(0deg, 0);
+    }
+
+    25% {
+        transform: skew(-15deg, 0);
+    }
+
+    to {
+        transform: skew(-20deg, 0);
+    }
+}
+
+@keyframes rotat2 {
+    from {
+        transform: skew(-22deg, 0);
+    }
+
+    40% {
+        transform: skew(-12deg, 0);
+    }
+
+    to {
+        transform: skew(0deg, 0);
+    }
+}
+
+/*---------------------------боковая анимация---------------------------------------------------------------------*/
+
+@media (max-width: 992px) {
+    .parent {
+        flex-flow: column;
+    }
+
+    nav ul{flex-flow: column;}
+}
+
+@media (max-width: 992px) {
+    .text{
+        font-size: 15px;
+        font-family: Calibri sans-serif;
+    }
+
+    th {
+        font-size: 10px;
+    }
+
+    td {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 720px) {
+    .text{
+        font-size: 10px;
+        font-family: Calibri sans-serif;
+    }
+}
